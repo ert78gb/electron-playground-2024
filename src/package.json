@@ -1,0 +1,7 @@
+{
+  "name": "electron-playground-2024",
+  "private": "true",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "main/index.js"
+}

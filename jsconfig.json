@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/jsconfig",
+  "compilerOptions": {
+    "checkJs": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "target": "ES2021"
+  },
+  "exclude": ["eslint.config.js", "node_modules"],
+  "include": ["**/*.js"]
+}

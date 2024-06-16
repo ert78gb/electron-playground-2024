@@ -1,0 +1,39 @@
+import js from "@eslint/js";
+import pluginUnicorn from "eslint-plugin-unicorn";
+import globals from "globals";
+
+export default [
+  js.configs.recommended,
+  pluginUnicorn.configs["flat/recommended"],
+  {
+    files: ["src/main/**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: ["src/main/preload.js"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
+    },
+  },
+  {
+    files: ["src/renderer/**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      globals: {
+        ...globals.browser,
+      },
+    },
+  },
+];

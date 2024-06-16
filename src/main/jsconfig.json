@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/jsconfig",
+  "extends": "../jsconfig.json",
+  "compilerOptions": {
+    "module": "ES2022",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "target": "ES2022"
+  }
+}

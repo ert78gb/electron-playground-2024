@@ -1,0 +1,30 @@
+{
+  "name": "electron-playground-2024",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "electron ./src/main/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "run-p lint:*",
+    "lint:css": "stylelint ./src/renderer/**/*.css",
+    "lint:eslint": "eslint",
+    "lint:prettier": "prettier --check ./",
+    "lint:type-check": "tsc -p jsconfig.json",
+    "electron:pack": "electron-builder --dir",
+    "electron:dist": "electron-builder"
+  },
+  "author": "Robert Kiss <ert78gb@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "electron": "31.0.1",
+    "electron-builder": "24.13.3",
+    "eslint": "9.5.0",
+    "eslint-plugin-unicorn": "54.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "3.3.2",
+    "stylelint": "16.6.1",
+    "stylelint-config-standard": "36.0.0",
+    "typescript": "5.4.5"
+  }
+}

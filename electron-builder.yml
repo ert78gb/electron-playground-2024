@@ -1,0 +1,5 @@
+appId: "com.example.electron-playground-2024"
+directories:
+  app: "./src"
+mac:
+  category: "public.app-category.utilities"
