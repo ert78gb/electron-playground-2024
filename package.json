@@ -4,19 +4,20 @@
   "type": "module",
   "scripts": {
     "start": "electron ./src/main/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron:pack": "electron-builder --dir",
+    "electron:dist": "electron-builder",
     "lint": "run-p lint:*",
     "lint:css": "stylelint ./src/renderer/**/*.css",
     "lint:eslint": "eslint",
     "lint:prettier": "prettier --check ./",
     "lint:type-check": "tsc -p jsconfig.json",
-    "electron:pack": "electron-builder --dir",
-    "electron:dist": "electron-builder"
+    "test": "playwright test"
   },
   "author": "Robert Kiss <ert78gb@gmail.com>",
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@playwright/test": "1.44.1",
     "electron": "31.0.1",
     "electron-builder": "24.13.3",
     "eslint": "9.5.0",

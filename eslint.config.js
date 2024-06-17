@@ -6,7 +6,7 @@ export default [
   js.configs.recommended,
   pluginUnicorn.configs["flat/recommended"],
   {
-    files: ["src/main/**/*.js"],
+    files: ["playwright.config.js", "src/main/**/*.js"],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: "module",
