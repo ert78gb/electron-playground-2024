@@ -18,7 +18,7 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "1.44.1",
-    "electron": "31.0.1",
+    "electron": "31.0.2",
     "electron-builder": "24.13.3",
     "eslint": "9.5.0",
     "eslint-plugin-unicorn": "54.0.0",
