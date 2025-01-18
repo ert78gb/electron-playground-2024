@@ -1,8 +1,16 @@
+import path from "node:path";
 import { expect, test } from "@playwright/test";
 import { _electron } from "playwright";
 
 test("should app start", async () => {
-  const electronApp = await _electron.launch({ args: ["./src/main/index.js"] });
+  const appPath = path.join(
+    import.meta.dirname,
+    "..",
+    "src",
+    "main",
+    "index.js",
+  );
+  const electronApp = await _electron.launch({ args: [appPath] });
 
   const window = await electronApp.firstWindow();
   const screenshot = await window.screenshot();
