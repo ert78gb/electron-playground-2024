@@ -32,11 +32,6 @@ jobs:
       - name: Run test
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm test
 
-      - run: pwd
-        if: always()
-      - run: ls -la
-        if: always()
-
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
