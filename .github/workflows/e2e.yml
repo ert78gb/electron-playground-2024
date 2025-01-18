@@ -41,5 +41,6 @@ jobs:
         if: failure()
         with:
           name: playwright
-          path: ".playwright"
+          include-hidden-files: true
+          path: .playwright/
           retention-days: 7
