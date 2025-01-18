@@ -4,6 +4,7 @@ import { defineConfig } from "@playwright/test";
 
 /**
  * @see https://playwright.dev/docs/test-configuration
+ * @type {import('@playwright/test').Config}
  */
 export default defineConfig({
   testDir: "./e2e",
