@@ -36,5 +36,5 @@ jobs:
         if: failure()
         with:
           name: playwright
-          path: .playwright
+          path: .playwright/
           retention-days: 7
