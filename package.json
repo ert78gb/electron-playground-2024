@@ -20,7 +20,7 @@
     "@playwright/test": "1.51.1",
     "electron": "35.1.2",
     "electron-builder": "26.0.12",
-    "eslint": "9.23.0",
+    "eslint": "9.25.0",
     "eslint-plugin-unicorn": "58.0.0",
     "npm-run-all": "4.1.5",
     "prettier": "3.5.3",
