@@ -17,7 +17,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "1.53.0",
+    "@playwright/test": "1.53.1",
     "electron": "36.5.0",
     "electron-builder": "26.0.12",
     "eslint": "9.29.0",
