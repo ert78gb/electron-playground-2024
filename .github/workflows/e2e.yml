@@ -30,7 +30,7 @@ jobs:
         run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
       - name: Run test
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm test
+        run: DISPLAY=:0 xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm test
 
       - uses: actions/upload-artifact@v6
         if: failure()
