@@ -5,6 +5,7 @@ test("should app start", async () => {
   const electronApp = await _electron.launch({ args: ["./src/main/index.js"] });
 
   const window = await electronApp.firstWindow();
+  await window.waitForSelector("body > div");
   const screenshot = await window.screenshot();
   await expect(screenshot).toMatchSnapshot("app-started.png");
   await electronApp.close();
