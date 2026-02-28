@@ -1,8 +1,9 @@
 import js from "@eslint/js";
 import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
   js.configs.recommended,
   pluginUnicorn.configs["flat/recommended"],
   {
@@ -36,4 +37,4 @@ export default [
       },
     },
   },
-];
+]);
