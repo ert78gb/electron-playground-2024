@@ -13,7 +13,7 @@ const createWindow = () => {
   win.loadFile(path.join(import.meta.dirname, "../renderer/index.html"));
 };
 
-// eslint-disable-next-line unicorn/prefer-top-level-await
+// eslint-disable-next-line unicorn/prefer-top-level-await, unicorn/prefer-await
 app.whenReady().then(() => {
   createWindow();
 });

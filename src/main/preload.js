@@ -1,3 +1,3 @@
-globalThis.addEventListener("DOMContentLoaded", () => {
+addEventListener("DOMContentLoaded", () => {
   // TODO: implement
 });
