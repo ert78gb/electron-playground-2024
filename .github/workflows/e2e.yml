@@ -24,7 +24,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Setup app armor
         run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
