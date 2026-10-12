@@ -2,9 +2,10 @@ import process from "node:process";
 import { defineConfig } from "@playwright/test";
 
 /**
- * @see https://playwright.dev/docs/test-configuration
- * @type {import('@playwright/test').Config}
- */
+@see https://playwright.dev/docs/test-configuration
+@type {import('@playwright/test').Config}
+*/
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default defineConfig({
   testDir: "./e2e",
   // Run tests in files in parallel
