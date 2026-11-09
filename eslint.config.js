@@ -3,7 +3,6 @@ import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 import { defineConfig } from "eslint/config";
 
-// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default defineConfig([
   js.configs.recommended,
   pluginUnicorn.configs.recommended,
